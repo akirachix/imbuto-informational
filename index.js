@@ -120,12 +120,12 @@ joinButton.addEventListener('click', function () {
 joinButton.style.backgroundColor = 'orange';
 joinButton.style.color = 'white';
 joinButton.style.border = 'none';
-joinButton.style.padding = '5px 10px';
+joinButton.style.padding = '15px 20px';
 joinButton.style.borderRadius = '5px';
 joinButton.style.cursor = 'pointer';
 joinButton.style.fontSize = '16px';
-joinButton.style.marginLeft = '6.5cm';
-joinButton.style.marginTop = '-1.1cm';
+joinButton.style.marginLeft = '0.5cm';
+joinButton.style.marginTop = '.1cm';
 
 
 navBar.appendChild(joinButton);
