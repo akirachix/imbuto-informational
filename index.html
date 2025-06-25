@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
     <section class="services-section">
       <h2 class="services-title">Our Services</h2>
       <div class="services-cards">
@@ -208,7 +209,113 @@
         </div>
       </div>
     </section>
+  <!-- How it works -->
+<section class="how-works-section">
+  <h3 class="how-works-title">How Imbuto Hub Works</h3>
+  <div class="how-works-cards">
+    <div class="how-works-card">
+      <div class="how-works-icon"><span>🔐</span></div>
+      <h3>Step 1: Sign In to the Dashboard</h3>
+      <p>Easily access your cooperative's intuitive dashboard with secure login credentials.</p>
+    </div>
+    <div class="how-works-card">
+      <div class="how-works-icon"><span>👥</span></div>
+      <h3>Step 2: Add &amp; Manage Farmers</h3>
+      <p>Register new farmers, update records, and keep everyone in sync with ease.</p>
+    </div>
+    <div class="how-works-card">
+      <div class="how-works-icon"><span>📦</span></div>
+      <h3>Step 3: Track Milk Records</h3>
+      <p>Log daily milk collections and view real-time delivery data for each member.</p>
+    </div>
+  </div>
+</section>
 
-    <script src="index.js"></script>
-  </body>
+
+ 
+<section class="faqs-section" id="faqs">
+  <h2>Frequently Asked Questions <br> (FAQs)</h2>
+  <div class="faq-item">
+    <button class="faq-question">
+      What is Imbuto Hub?
+      <span class="faq-toggle"></span>
+    </button>
+    <div class="faq-answer">
+      <p>Imbuto Hub is a digital platform designed to empower dairy cooperatives and farmers in Rwanda by providing efficient record-keeping, support, and growth tools.</p>
+    </div>
+  </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+            Who can use Imbuto Hub?
+            <span class="faq-toggle"></span>
+        </button>
+        <div class="faq-answer">
+            <p>Imbuto Hub is tailored for cooperative officials and dairy farmers who want to streamline operations,
+                improve transparency, and access support services.</p>
+        </div>
+    </div>
+
+        <div class="faq-item">
+        <button class="faq-question">
+            How can I register my cooperative?
+            <span class="faq-toggle"></span>
+        </button>
+        <div class="faq-answer">
+            <p>You can register your cooperative through our web dashboard or by contacting us via the contact
+                details provided at the bottom of this page.</p>
+        </div>
+    </div>
+
+        <div class="faq-item">
+        <button class="faq-question">
+            Is there a mobile app available?
+            <span class="faq-toggle"></span>
+        </button>
+        <div class="faq-answer">
+            <p>Yes, you can download the Imbuto Hub app from the Google Play Store to access all features directly
+                from your smartphone.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+            <button class="faq-question">How do I get support if I have issues?
+              <span class="faq-toggle"></span>
+            </button>
+            <div class="faq-answer">
+                <p>If you need assistance, please use the contact details below or call/email us directly. Our support team
+                    is always ready to help you.</p>
+            </div>
+        </div>
+</section>
+
+
+
+  <section class="newsletter-section">
+    <h2>Stay Updated!</h2>
+    <form class="newsletter-form">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="privacy-note">No spam. Unsubscribe anytime.</p>
+  </section>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const items = document.querySelectorAll('.faq-item');
+  items.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    btn.addEventListener('click', function () {
+      const isOpen = item.classList.contains('open');
+      items.forEach(it => it.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+});
+</script>
+
+<script src="index.js"></script>
+</body>
 </html>
+
